@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+h2,p{
+  font-weight: bolder;
+}
+p{
+  color: rgb(71, 70, 70);
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.main-section{
+  display: flex;
+  width: 6%;
+}
+.first-div{
+  margin: 5px auto;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 8px;
+}
+.first-div img{
+  width: 30px;
+  height: 30px;
+}
+.second-div{
+  margin-top: 5px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+.upper-section{
+  display: flex;
+  justify-content: space-between;
+}
+.upper-section img{
+  /* width: 30px; */
+  height: 30px;
+}
+.upper-section .youtube-logo img{
+  height: 20px;
+  margin-top: 4px;
+}
+.search-section{
+  display: flex;
+  height: 25px;
+}
+.search-section input{
+  width: 400px;
+  border: 0.5px solid #ccc;
+}
+.search-section button{
+  border: none;
+}
+.search-section button img{
+  width: 30px;
+  height: 12px;
+}
+.mic{
+  margin-left: 20px;
+  max-width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgb(233, 230, 230);
+}
+.user-account{
+  display: flex;
+  gap: 20px;
+}
+
+.mid-section{
+  margin-top: 2px;
+  max-height: 40px;
+}
+hr{
+  width: 1050px;
+}
+
+.suggestion-bar{
+  margin: 5px;
+  display: flex;
+  gap:20px;
+}
+.suggestions{
+  border: 1px solid;
+  color: black;
+  border-radius: 15px;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight:550 ;
+}
+.suggestion-bar .first{
+  background-color: black;
+  color:white
+}
+.image-info img,text,img{
+  width: 100%;
+  height: 100%;
+}
+.video{
+  width: 200px;
+  height: 150px;
+}
+.image-info{
+  display: flex;
+  justify-content: space-between;
+}
+.image-info img{
+  width: 20px;
+  height: 20px;
+}
+
+.text h2{
+  font-size: 10px;
+}
+.text p,pre{
+  font-size: 8px;
+}
+.parent{
+  display: flex;
+  justify-content: space-between;
+}
+.body-section{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgb(240, 238, 238);
+}
