@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+  color: aliceblue;
+}
+.blue-text{
+  color: rgb(30, 100, 221);
+}
+
+.home-section{
+  height: 100%;
+}
+.home{
+  background-image: url("images/first-earth.png");
+  min-height: 100%;
+}
+.image{
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container{
+  /* max-width: 900px; */
+  margin: auto;
+}
+.home-container{
+  padding: 150px 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: aliceblue;
+  gap: 40px;
+}
+
+.my-name{
+  font-size: 3rem;
+}
+.highlight{
+  color: #f33482;
+}
+h3{
+  font-size: 23px;
+}
+.navbar{
+  position: sticky;
+}
+.navbar-container{
+  display: flex;
+  gap: 30px;
+  padding: 20px 20px;
+  background-color: black;}
+.nav-button{
+  color: aliceblue;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+hr{
+  border: 2px solid;
+  color: aqua;
+}
+
+.about-section{
+  background-image: url("images/unknown-planet.jpg");
+  min-height: 500px;
+}
+.mid-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 50px 50px;
+  gap: 40px;
+}
+.website-text{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+.website-functionalities{
+  display: flex;
+}
+.icon{
+  background-color: aqua;
+}
+.functionality{
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+
+}
+.functionalities-text h1{
+  font-weight: bold;
+}
+.functionalities-text p{
+  font-size: 12px;
+}
+
+.about-my-skills{
+  display: flex;
+}
+
+.about-myself{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
