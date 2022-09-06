@@ -5,8 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  
   <script src="https://kit.fontawesome.com/4a8337fc93.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  
+
 </head>
 <body>
   <section class="home-section">
@@ -15,16 +18,16 @@
         <h1 class="my-name">Hello, I'm 
           <span class="highlight">Priyanshu Bharti.</span></h1>
         <h3>I'm a Full Stack Developer with a serious passion for UI effects, animations and creating intuitive user experiences with highly scalable backend.</h3>
-        <button>Checkout my work.</button>
+        <div class="work"><span>Check out my work.</span></div>
       </div>
       
     </div>
     <nav class="navbar">
         <div class="navbar-container">
-          <div class="homee nav-button">Home</div>
-          <div class="about nav-button">About</div>
-          <div class="projects nav-button">Projects</div>
-          <div class="contact nav-button">Contact</div>
+          <div class="homee nav-button uppercase">Home</div>
+          <div class="about nav-button uppercase">About</div>
+          <div class="projects nav-button uppercase">Projects</div>
+          <div class="contact nav-button uppercase">Contact</div>
         </div>
       <hr></hr>
     </nav>
@@ -32,48 +35,155 @@
 
   <section class="about-section image">
     <div class="mid-container ">
-      <h1 class="website-text">My Websites are</h1>
-      
+      <h1 class="website-text bold">My Websites are
+      <hr class="underline ">
+
+      </h1>
       <div class="website-functionalities">
         <div class="functionality">
-          <i class="fa-light fa-gauge-simple-high"></i>
+
+          <div class="icon">
+            <i class="fa-solid fa-gauge-simple-high"></i>
+          </div>
+          
           <div class="functionalities-text">
-            <h1>Fast</h1>
+            <h1 class="bold">Fast</h1>
             <p>Fast load times and lag free interaction, my highest priority.</p>
           </div>
         </div>
         <div class="functionality">
-          <i class="fa-light fa-gauge-simple-high"></i>
+          <div class="icon">
+            <img class="icon-mid" src="images/desktop-mobile.png" alt="">
+          </div>
           <div class="functionalities-text">
-            <h1>Responsive</h1>
+            <h1 class="bold">Responsive</h1>
             <p>My layouts will work on any device, big or small.</p>
           </div>
         </div>
         <div class="functionality">
-          <i class="fa-light fa-gauge-simple-high"></i>
+          <div class="icon">
+            <i class="fa-regular fa-lightbulb"></i>
+          </div>
           <div class="functionalities-text">
-            <h1>Intuitive</h1>
+            <h1 class="bold">Intuitive</h1>
             <p>Strong preference for easy to use, intuitive UX/UI.</p>
           </div>
         </div>
         <div class="functionality">
-          <i class="fa-light fa-gauge-simple-high"></i>
+          <div class="icon">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
           <div class="functionalities-text">
-            <h1>Dynamic</h1>
+            <h1 class="bold">Dynamic</h1>
             <p>Websites don't have to be static, I love making pages come to life.</p>
           </div>
         </div>
       </div>
       <div class="about-my-skills ">
         <div class="about-myself">
-          <h1>More about myself</h1>
+          <h1 class="uppercase bold">More about myself</h1>
           <p>I'm an undergraduate in B-Tech Computer Science and Engineering from DIT, Rishikesh with current grade point of 7.8. Currently I'm working on MERN stack but also want to explore my potential in every possible field.</p>
           <p><span class="blue-text">Let's make something out of the box.</span></p>
         </div>
-        <div class="skill-sets">Html</div>
+
+        <div class="skill-sets">
+
+          <div class="skill-component">
+            <div class="language">
+              <div class="which-language">
+                <p>HTML</p>
+              </div>
+              <div class="how-much-known ninty-percent"></div>
+            </div>
+            <div class="how-much-percent">
+              <p>90%</p>
+            </div>
+          </div>
+
+          <div class="skill-component">
+            <div class="language">
+              <div class="which-language">
+                <p>CSS</p>
+              </div>
+              <div class="how-much-known ninty-percent"></div>
+            </div>
+            <div class="how-much-percent">
+              <p>90%</p>
+            </div>
+          </div>
+
+          <div class="skill-component">
+            <div class="language">
+              <div class="which-language">
+                <p>BOOTSTRAP</p>
+              </div>
+              <div class="how-much-known eighty-percent"></div>
+            </div>
+            <div class="how-much-percent">
+              <p>80%</p>
+            </div>
+          </div>
+
+          <div class="skill-component">
+            <div class="language">
+              <div class="which-language">
+                <p>Javascript</p>
+              </div>
+              <div class="how-much-known eighty-percent"></div>
+            </div>
+            <div class="how-much-percent">
+              <p>80%</p>
+            </div>
+          </div>
+
+          <div class="skill-component">
+            <div class="language">
+              <div class="which-language">
+                <p>React</p>
+              </div>
+              <div class="how-much-known seventy-percent"></div>
+            </div>
+            <div class="how-much-percent">
+              <p>70%</p>
+            </div>
+          </div>
+
+          <div class="skill-component">
+            <div class="language">
+              <div class="which-language">
+                <p>Node.js</p>
+              </div>
+              <div class="how-much-known seventy-five-percent"></div>
+            </div>
+            <div class="how-much-percent">
+              <p>75%</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+  </section>
+
+  <section class="contact-section image">
+    <div class="contact-container">
+      <h1 class="website-text uppercase bold">Contact
+      <hr class="underline ">
+      </h1>
+      <div class="p-tags">
+        <p>Please provide your feedback
+        </p>
+        <p>Have a project for me? I'd love to hear from you, give me a shout by email or by using the form below.
+        </p>
+      </div>
+      
+        <form class="input-form">
+          <input class="form-element" type="text" placeholder="Name">
+          <input class="form-element" type="email" placeholder="Name">
+          <textarea class="form-element" rows="5" cols="50" placeholder="Your Message" ></textarea>
+          <input class="button" type="submit">
+        </form>
+    </div>
   </section>
 </body>
 </html>

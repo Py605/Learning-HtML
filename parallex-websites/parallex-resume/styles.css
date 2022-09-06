@@ -5,6 +5,13 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
   color: aliceblue;
 }
+
+.uppercase{
+  text-transform: uppercase;
+}
+.bold{
+  font-weight: bold;
+}
 .blue-text{
   color: rgb(30, 100, 221);
 }
@@ -41,11 +48,21 @@
 .highlight{
   color: #f33482;
 }
-h3{
+.home-container h3{
   font-size: 23px;
 }
-.navbar{
+.work span{
+  font-size: 18pt;
+  /* font-weight: 100; */
+  border: #fff 1pt solid;
+  padding: 15px;
+}
+nav .navbar{
   position: sticky;
+  top: 0;
+  margin-bottom: 32px;
+  background: transparent;
+  z-index: 50;
 }
 .navbar-container{
   display: flex;
@@ -55,7 +72,6 @@ h3{
 .nav-button{
   color: aliceblue;
   font-size: 15px;
-  text-transform: uppercase;
 }
 hr{
   border: 2px solid;
@@ -65,44 +81,151 @@ hr{
 .about-section{
   background-image: url("images/unknown-planet.jpg");
   min-height: 500px;
+  /* padding: 150px auto; */
 }
 .mid-container{
   display: flex;
   flex-direction: column;
-  margin: auto;
-  padding: 50px 50px;
-  gap: 40px;
+  padding-top: 150px;
+  padding: 150px 50px;
+  gap: 100px;
 }
 .website-text{
   font-size: 40px;
   text-align: center;
   color: white;
 }
+.underline{
+  border: #fff 2px solid;
+  max-width: 190px;
+  margin: auto;
+}
 .website-functionalities{
   display: flex;
 }
 .icon{
+  margin: auto;
+  width: 100px;
+  height: 100px;
   background-color: aqua;
+}
+.icon i,img{
+  width: 50px;
+  height: 50px;
+}
+.icon-mid{
+  margin: auto;
 }
 .functionality{
   display: flex;
   flex-direction: column;
   color: aliceblue;
+  text-align: center;
+}
 
-}
-.functionalities-text h1{
-  font-weight: bold;
-}
 .functionalities-text p{
   font-size: 12px;
 }
 
 .about-my-skills{
   display: flex;
+  gap: 80px;
+  justify-content: space-between;
 }
 
 .about-myself{
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 20px;
+}
+
+.skill-sets{
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  gap: 20px;
+}
+
+.skill-component{
+  display: flex;
+  justify-content: space-between;
+  max-height: 15px;
+}
+.language{
+  display: flex;
+}
+
+.which-language{
+  margin: auto;
+  text-align: center;
+  background-color: #101214;
+  min-width: 100px;
+  font-size: 13px;
+}
+
+.how-much-known{
+  border: none;
+  background-color: #56888A;
+}
+.ninty-percent{
+  min-width: 350px;
+}
+.how-much-percent{
+  color: #858585;
+}
+
+.eighty-percent{
+  min-width: 300px;
+}
+.seventy-percent{
+  min-width: 250px;
+}
+.seventy-five-percent{
+  min-width: 275px;
+}
+
+.contact-section{
+  background-image: url("images/star-falling.jpg");
+  min-height: 500px;
+}
+
+.contact-container{
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  gap: 80px;
+}
+.input-form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: fit-content;
+  margin: auto;
+}
+input,textarea{
+  max-width: 500px;
+  min-height: 30px;
+  background: #1e242c00;
+  border: 0.1px solid #ffffffa3;
+}
+
+.form-element{
+  resize: none;
+  padding: 3px 10px;
+}
+.button {
+  background: transparent;
+  color: #fff;
+  align-self: flex-end;
+  font-size: 12pt;
+  margin: 5px 0 0 0;
+  outline: 0;
+  padding: 10px 20px;
+}
+.button:hover {
+  background-color: #04c2c9;
 }
