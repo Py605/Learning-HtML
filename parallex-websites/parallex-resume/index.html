@@ -5,35 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
   <script src="https://kit.fontawesome.com/4a8337fc93.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
-  
-
 </head>
+
 <body>
-  <section class="home-section">
+  <section class="home-section" id="home-section">
     <div class="home image">
       <div class="home-container container">
         <h1 class="my-name">Hello, I'm 
-          <span class="highlight">Priyanshu Bharti.</span></h1>
+          <span class="highlight pink-color">Priyanshu Bharti.</span></h1>
         <h3>I'm a Full Stack Developer with a serious passion for UI effects, animations and creating intuitive user experiences with highly scalable backend.</h3>
         <div class="work"><span>Check out my work.</span></div>
       </div>
       
     </div>
-    <nav class="navbar">
-        <div class="navbar-container">
-          <div class="homee nav-button uppercase">Home</div>
-          <div class="about nav-button uppercase">About</div>
-          <div class="projects nav-button uppercase">Projects</div>
-          <div class="contact nav-button uppercase">Contact</div>
-        </div>
-      <hr></hr>
-    </nav>
+    
   </section>
-
-  <section class="about-section image">
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class=" nav-button uppercase">
+        <a href="#home-section">Home</a>
+      </div>
+      <div class="nav-button uppercase">
+        <a href="#about-section">About
+        </a>
+      </div>
+      <div class="nav-button uppercase">
+        <a href="#projects-section">Projects
+        </a>
+      </div>
+      <div class="nav-button uppercase">
+        <a href="#contact-section">Contact
+      </a>
+      </div>
+    </div>
+    <hr></hr>
+  </div>
+  <section class="about-section image" id="about-section">
     <div class="mid-container ">
       <h1 class="website-text bold">My Websites are
       <hr class="underline ">
@@ -82,7 +91,7 @@
       <div class="about-my-skills ">
         <div class="about-myself">
           <h1 class="uppercase bold">More about myself</h1>
-          <p>I'm an undergraduate in B-Tech Computer Science and Engineering from DIT, Rishikesh with current grade point of 7.8. Currently I'm working on MERN stack but also want to explore my potential in every possible field.</p>
+          <p>I'm an undergraduate in B-Tech Computer Science and Engineering from <span class="blue-text">DIT, Rishikesh </span>with current grade point of <span class="blue-text">7.8.</span> Currently I'm working on MERN stack but also want to explore my potential in every possible field.</p>
           <p><span class="blue-text">Let's make something out of the box.</span></p>
         </div>
 
@@ -165,15 +174,15 @@
 
   </section>
 
-  <section class="contact-section image">
+  <section class="contact-section image" id="contact-section">
     <div class="contact-container">
       <h1 class="website-text uppercase bold">Contact
       <hr class="underline ">
       </h1>
       <div class="p-tags">
-        <p>Please provide your feedback
-        </p>
-        <p>Have a project for me? I'd love to hear from you, give me a shout by email or by using the form below.
+        <p class="highlight bold">Please provide your feedback
+        <br>
+        Have a project for me? I'd love to hear from you, give me a shout by email or by using the form below.
         </p>
       </div>
       
@@ -185,5 +194,38 @@
         </form>
     </div>
   </section>
+
+  <footer>
+    <div class="footer container">
+      <div class="social-medias">
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/priyanshu-bharti-a253941b0/" target="_blank">
+            <i class="big-icon fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.twitter.com/Py_605" target="_blank">
+            <i class="big-icon fa-brands fa-square-twitter"></i>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.github.com/py605" target="_blank">
+            <i class="big-icon fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="mailto: pryanshubharti9412@gmail.com" target="_blank">
+            <i class="big-icon fa-regular fa-envelope"></i>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.leetcode.com/py605" target="_blank">
+            <i class="big-icon fa-solid fa-code"></i>
+          </a>
+        </div>
+      </div>
+      <div class="copyright-text">Priyanshu Bharti <span class="highlight pink-color">©2022</span></div>
+    </div>
+  </footer>
 </body>
 </html>

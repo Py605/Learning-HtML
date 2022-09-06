@@ -16,6 +16,9 @@
   color: rgb(30, 100, 221);
 }
 
+.highlight{
+  color: #04c2c9;
+}
 .home-section{
   height: 100%;
 }
@@ -45,7 +48,7 @@
 .my-name{
   font-size: 3rem;
 }
-.highlight{
+.pink-color{
   color: #f33482;
 }
 .home-container h3{
@@ -57,18 +60,19 @@
   border: #fff 1pt solid;
   padding: 15px;
 }
-nav .navbar{
+.navbar{
   position: sticky;
   top: 0;
-  margin-bottom: 32px;
-  background: transparent;
-  z-index: 50;
+  /* margin-bottom: 32px; */
+  /* background: transparent; */
+  /* z-index: 50; */
 }
 .navbar-container{
   display: flex;
   gap: 30px;
   padding: 20px 20px;
-  background-color: black;}
+  background-color: black;
+}
 .nav-button{
   color: aliceblue;
   font-size: 15px;
@@ -199,6 +203,11 @@ hr{
   text-align: center;
   gap: 80px;
 }
+
+.p-tags{
+  font-size: 15px;
+  letter-spacing: -1px;
+}
 .input-form{
   display: flex;
   flex-direction: column;
@@ -228,4 +237,26 @@ input,textarea{
 }
 .button:hover {
   background-color: #04c2c9;
+}
+
+footer{
+  min-height: 180px;
+  background-color: #101214;
+}
+
+.footer{
+  padding:  60px 0px 0px 0px;
+  gap: 80px;
+  max-width: 400px;
+}
+.social-medias{
+  display: flex;
+  justify-content: space-between;
+}
+.big-icon{
+  font-size: 1.73em;
+}
+.copyright-text{
+  padding-top: 50px;
+  text-align: center;
 }
