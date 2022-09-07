@@ -33,7 +33,7 @@
   background-repeat: no-repeat;
 }
 .container{
-  /* max-width: 900px; */
+  max-width: 870px;
   margin: auto;
 }
 .home-container{
@@ -44,9 +44,11 @@
   color: aliceblue;
   gap: 40px;
 }
-
+.container .details{
+  font-size: 18px;
+}
 .my-name{
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .pink-color{
   color: #f33482;
@@ -54,32 +56,44 @@
 .home-container h3{
   font-size: 23px;
 }
+.work span:hover{
+  border: #04c2c9 solid;
+  cursor: pointer;
+}
 .work span{
   font-size: 18pt;
   /* font-weight: 100; */
   border: #fff 1pt solid;
   padding: 15px;
 }
+nav{
+  margin-top: -4px;
+}
 .navbar{
   position: sticky;
   top: 0;
-  /* margin-bottom: 32px; */
-  /* background: transparent; */
-  /* z-index: 50; */
+  z-index:1;
+  background-color: #101214;
 }
 .navbar-container{
   display: flex;
-  gap: 30px;
-  padding: 20px 20px;
+  gap: 40px;
+  padding: 20px 30px;
   background-color: black;
 }
-.nav-button{
+a{
   color: aliceblue;
   font-size: 15px;
+  text-decoration: none;
+}
+.nav-button a:hover{
+  transition: 0.7s;
+  color:#f33482;
 }
 hr{
-  border: 2px solid;
-  color: aqua;
+  border: 1.2px solid;
+  color:aqua;
+  background-color: aqua;
 }
 
 .about-section{
@@ -90,8 +104,7 @@ hr{
 .mid-container{
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
-  padding: 150px 50px;
+  padding: 120px 50px;
   gap: 100px;
 }
 .website-text{
@@ -106,6 +119,7 @@ hr{
 }
 .website-functionalities{
   display: flex;
+  gap: 25px;
 }
 .icon{
   margin: auto;
@@ -125,16 +139,17 @@ hr{
   flex-direction: column;
   color: aliceblue;
   text-align: center;
+  gap: 15px;
 }
 
 .functionalities-text p{
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .about-my-skills{
   display: flex;
-  gap: 80px;
   justify-content: space-between;
+  gap: 80px;
 }
 
 .about-myself{
@@ -215,11 +230,11 @@ hr{
   max-width: fit-content;
   margin: auto;
 }
-input,textarea{
+input,textarea,button{
   max-width: 500px;
   min-height: 30px;
   background: #1e242c00;
-  border: 0.1px solid #ffffffa3;
+  border: 1.5px solid #ffffffa3;
 }
 
 .form-element{
@@ -230,14 +245,29 @@ input,textarea{
   background: transparent;
   color: #fff;
   align-self: flex-end;
-  font-size: 12pt;
+  font-size: 11pt;
   margin: 5px 0 0 0;
   outline: 0;
-  padding: 10px 20px;
+  padding: 10px 25px;
 }
 .button:hover {
+  transition: 0.7s;
+  cursor: pointer;
   background-color: #04c2c9;
 }
+
+.upward-arrow{
+  margin-top: -15px;
+  position: relative;
+  z-index: 10;
+}
+.upward-arrow i{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
 
 footer{
   min-height: 180px;
