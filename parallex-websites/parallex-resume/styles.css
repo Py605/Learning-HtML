@@ -5,7 +5,9 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
   color: aliceblue;
 }
-
+html{
+  font-size: 10px;
+}
 .uppercase{
   text-transform: uppercase;
 }
@@ -23,17 +25,17 @@
   height: 100%;
 }
 .home{
-  background-image: url("images/first-earth.png");
+  background: linear-gradient(to top , rgb(0, 0, 0) , transparent) , linear-gradient(to left , rgba(0, 0, 0, 0.405) , transparent) , url(images/home-bg.jpg);
   min-height: 100%;
 }
 .image{
-  position: relative;
+  position:static;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container{
-  max-width: 870px;
+  max-width: 87rem;
   margin: auto;
 }
 .home-container{
@@ -42,13 +44,14 @@
   flex-direction: column;
   text-align: center;
   color: aliceblue;
-  gap: 40px;
+  gap: 4rem;
+}
+
+.my-name{
+  font-size: 3.48rem;
 }
 .container .details{
-  font-size: 18px;
-}
-.my-name{
-  font-size: 2.8rem;
+  font-size: 1.6rem;
 }
 .pink-color{
   color: #f33482;
@@ -60,9 +63,13 @@
   border: #04c2c9 solid;
   cursor: pointer;
 }
+.work span :hover{
+  transition: 0.5s ;
+  transform: rotate(90deg);
+}
+
 .work span{
-  font-size: 18pt;
-  /* font-weight: 100; */
+  font-size: 18px;
   border: #fff 1pt solid;
   padding: 15px;
 }
@@ -97,9 +104,8 @@ hr{
 }
 
 .about-section{
-  background-image: url("images/unknown-planet.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.957), rgba(0, 0, 0, 0.835)), url(https://deekshasharma.vercel.app/style/../img/bg2.jpg);
   min-height: 500px;
-  /* padding: 150px auto; */
 }
 .mid-container{
   display: flex;
@@ -119,20 +125,8 @@ hr{
 }
 .website-functionalities{
   display: flex;
+  max-width: 100%;
   gap: 25px;
-}
-.icon{
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-}
-.icon i,img{
-  width: 50px;
-  height: 50px;
-}
-.icon-mid{
-  margin: auto;
 }
 .functionality{
   display: flex;
@@ -141,15 +135,38 @@ hr{
   text-align: center;
   gap: 15px;
 }
-
+.icon{
+  margin: auto;
+  border-radius: 20%;
+  width: 100px;
+  height: 100px;
+  background-color: #0097A2;
+}
+.particular-icon{
+  padding: 18px 20px;
+}
+.icon i,img{
+  width: 60px;
+  height: 60px;
+}
+.functionalities-text{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.functionalities-text h1{
+  font-size: 2rem;
+}
 .functionalities-text p{
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .about-my-skills{
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  /* gap: 30px; */
+  min-width:100%;
 }
 
 .about-myself{
@@ -157,12 +174,18 @@ hr{
   flex-direction: column;
   text-align: center;
   gap: 20px;
+  max-width: 50%;
 }
-
+.about-myself p{
+  font-size: 1.5rem;
+}
+.about-myself h1{
+  font-size: 2.5rem;
+}
 .skill-sets{
   display: flex;
   flex-direction: column;
-  min-width: 500px;
+  min-width: 50%;
   gap: 20px;
 }
 
@@ -170,40 +193,46 @@ hr{
   display: flex;
   justify-content: space-between;
   max-height: 15px;
+  width: 100%;
+}
+.which-language{
+  /* margin: auto; */
+  text-align: center;  
+  background-color: #101214;
+  min-width: 110px;
+  font-size: 13px;
 }
 .language{
   display: flex;
-}
-
-.which-language{
-  margin: auto;
-  text-align: center;
-  background-color: #101214;
-  min-width: 100px;
-  font-size: 13px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .how-much-known{
   border: none;
   background-color: #56888A;
 }
-.ninty-percent{
-  min-width: 350px;
-}
-.how-much-percent{
-  color: #858585;
-}
 
+.ninty-percent{
+  width: 90%;
+}
 .eighty-percent{
-  min-width: 300px;
+  width: 80%;
 }
 .seventy-percent{
-  min-width: 250px;
+  width: 70%;
 }
 .seventy-five-percent{
-  min-width: 275px;
+  width: 75%;
 }
-
+.how-much-percent{
+  min-height: 100%;
+  font-size: 1.3rem;
+  border: none;
+  text-align: center;
+  min-width: 5%;
+  color: #858585;
+}
 .contact-section{
   background-image: url("images/star-falling.jpg");
   min-height: 500px;
@@ -276,8 +305,8 @@ footer{
 
 .footer{
   padding:  60px 0px 0px 0px;
-  gap: 80px;
-  max-width: 400px;
+  gap: 8rem;
+  max-width: 40rem;
 }
 .social-medias{
   display: flex;
@@ -287,6 +316,35 @@ footer{
   font-size: 1.73em;
 }
 .copyright-text{
+  font-size: 1.6em;
   padding-top: 50px;
   text-align: center;
+}
+
+
+/* Media Query.. */
+@media (min-width:800px) and (max-width:1000px){
+  .about-my-skills p{
+    font-size: 0.8em;
+  }
+}
+@media (min-width:500px) and (max-width:800px){
+  .home-section{
+    min-width:max-content;
+  }
+  .navbar{
+    min-width:max-content;
+  }
+  .about-section{
+    min-width:max-content;
+  }
+  .about-my-skills p{
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width:300px) and (max-width:500px){
+  .about-my-skills p{
+    font-size: 0.4em;
+  }
 }
