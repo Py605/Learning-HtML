@@ -15,7 +15,7 @@ html{
   font-weight: bold;
 }
 .blue-text{
-  color: rgb(30, 100, 221);
+  color: #60CFFF;
 }
 
 .highlight{
@@ -156,9 +156,11 @@ hr{
 }
 .functionalities-text h1{
   font-size: 2rem;
+  color: #BBBBBB;
 }
 .functionalities-text p{
   font-size: 1.3rem;
+  color: #bbbbbbd0;
 }
 
 .about-my-skills{
@@ -178,9 +180,13 @@ hr{
 }
 .about-myself p{
   font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  color: #BBBBBB;
 }
 .about-myself h1{
   font-size: 2.5rem;
+  color: #BBBBBB;
 }
 .skill-sets{
   display: flex;
