@@ -4,7 +4,7 @@ body{
   box-sizing: border-box;
   font-family: sans-serif;
   font-weight: light;
-}
+  background-color: rgba(250, 177, 160,1.0);}
 .container{
   max-width: 900px;
   margin: 0 auto  ;
@@ -13,7 +13,7 @@ nav{
   box-shadow: 5px 5px 5px rgba(1,1,1,0.05);  position: sticky;
   top: 0;
   margin-bottom: 25px;
-  background-color: white;
+  background-color: rgba(225, 112, 85,1.0);
 }
 .navigation{
   padding: 5px;
@@ -52,6 +52,7 @@ nav{
   padding: 0;
   margin:0;
   font-size: 2.6rem;
+  color: rgba(214, 48, 49,1.0);
 }
 .hero-content p{
   font-size: 10px;
@@ -94,7 +95,7 @@ nav{
 }
 .feature:hover{
   transition: 0.2s ease-in-out;
-  box-shadow: 5px 5px 5px rgba(1,1,1,0.15);  position: sticky;
+  box-shadow: 5px 5px 5px rgba(1,1,1,0.15);  
 
 }
 .icon img{
@@ -114,7 +115,10 @@ nav{
   font-size: 10px;
 }
 .divider{
-  border: 1px solid #ccc;
+  margin: auto;
+  max-width: 80%;
+  border: 1px  rgb(244, 129, 129);
+  border-style:groove;
 }
 
 .menu{
@@ -192,6 +196,14 @@ footer{
   display: flex;
   flex-direction: column;
   gap: -100px;
+}
+.links-container form{
+  display: flex;
+  flex-direction: column;
+  /* gap: -100px; */
+}
+.follow-button{
+  align-self: flex-start;
 }
 .links-container h3{
   margin-left: 20px;
