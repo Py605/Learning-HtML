@@ -43,7 +43,8 @@ html{
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: aliceblue;
+  /* color: aliceblue; */
+  color: #CCCCCC;
   gap: 4rem;
 }
 
@@ -80,7 +81,7 @@ nav{
   position: sticky;
   top: 0;
   z-index:1;
-  background-color: #101214;
+  background-color: transparent ;
 }
 .navbar-container{
   display: flex;
@@ -116,12 +117,12 @@ hr{
 .website-text{
   font-size: 40px;
   text-align: center;
-  color: white;
+  color: #CCCCCC;
 }
 .underline{
-  border: #fff 2px solid;
+  border: #CCCCCC 2px solid;
   max-width: 190px;
-  margin: auto;
+  margin: 12px auto 0px auto;
 }
 .website-functionalities{
   display: flex;
@@ -239,6 +240,98 @@ hr{
   min-width: 5%;
   color: #858585;
 }
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.project-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.933), rgba(0, 0, 0, 0.91)), url(images/project-bg.jpg);
+  min-height: 100%;
+  padding: 120px 0px;
+}
+
+.project-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h2{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 120%;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.filter-menu{
+  min-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: large;
+  text-transform: uppercase;
+}
+.filter-menu li{
+  max-width: 20%;
+  padding: 4px 35px;
+  color: #CCCCCC  ;
+  cursor: pointer;
+}
+
+.filter-menu li.current{
+  background: #f33482;
+}
+.filter-item{
+  /* margin: auto; */
+}
+
+.filter-item li{
+  height: 200px;
+  width: 24.5%;
+  padding: 3px;
+  float: left;
+}
+
+.filter-item li.active{
+  width: 24.5%;
+  padding: 3px;
+  transition: all 0.9s ease;
+}
+
+.filter-item li.delete{
+  width: 0%;
+  padding: 0;
+  transition: all 0.6s ease;
+}
+
+.filter-item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.filter-item li :hover{
+  opacity: 0.5;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;   
+  border-radius: 2px;
+
+  -moz-box-shadow: 12px 12px 13px rgb(121, 120, 120);    
+  -webkit-box-shadow: 12px 12px 13px rgb(70, 69, 69);
+  box-shadow: 0 0 5px rgb(251, 251, 251);
+}
+
+
+
 .contact-section{
   background-image: url("images/star-falling.jpg");
   min-height: 500px;
@@ -329,10 +422,20 @@ footer{
 
 
 /* Media Query.. */
-@media (min-width:800px) and (max-width:1000px){
+@media (min-width:800px) and (max-width:1500px){
   .about-my-skills p{
     font-size: 0.8em;
   }
+  .filter-item li.active,
+        .filter-item li{
+            width: 24.5%;
+            padding: 2px;
+            /* margin: auto; */
+        }
+      
+        h2{
+            font-size: 270%;
+        }
 }
 @media (min-width:500px) and (max-width:800px){
   .home-section{
@@ -346,6 +449,14 @@ footer{
   }
   .about-my-skills p{
     font-size: 0.6em;
+  }
+  .filter-item li.active,
+  .filter-item li{
+      width: 33.33%;
+  }
+
+  h2{
+      font-size: 190%;
   }
 }
 
