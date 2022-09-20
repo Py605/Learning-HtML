@@ -6,8 +6,21 @@
   color: aliceblue;
 }
 html{
+  scroll-behavior: smooth;
   font-size: 10px;
 }
+
+::-webkit-scrollbar{
+  width: 4px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(188, 188, 188);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background:black;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -17,16 +30,27 @@ html{
 .blue-text{
   color: #60CFFF;
 }
-
+.website-text{
+  font-size: 4rem;
+  text-align: center;
+  color: #CCCCCC;
+}
 .highlight{
   color: #04c2c9;
 }
-.home-section{
-  height: 100%;
+.underline{
+  border: #CCCCCC 2px solid;
+  max-width: 170px;
+  margin: 12px auto 0px auto;
 }
-.home{
+/*------------ Home Section---------- */ 
+
+.home-section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: linear-gradient(to top , rgb(0, 0, 0) , transparent) , linear-gradient(to left , rgba(0, 0, 0, 0.405) , transparent) , url(images/home-bg.jpg);
-  min-height: 100%;
 }
 .image{
   position:static;
@@ -35,24 +59,23 @@ html{
   background-repeat: no-repeat;
 }
 .container{
-  max-width: 87rem;
-  margin: auto;
+  max-width: 70vw;
+  margin: auto
 }
 .home-container{
-  padding: 150px 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* color: aliceblue; */
   color: #CCCCCC;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .my-name{
-  font-size: 3.48rem;
+  font-size: 5.75rem;
 }
 .container .details{
-  font-size: 1.6rem;
+  color: rgb(202, 202, 202);
+  font-size: 2rem;
 }
 .pink-color{
   color: #f33482;
@@ -74,23 +97,26 @@ html{
   border: #fff 1pt solid;
   padding: 15px;
 }
-nav{
-  margin-top: -4px;
-}
-.navbar{
-  position: sticky;
-  top: 0;
-  z-index:1;
-  background-color: transparent ;
+
+
+/*--------- Nav Section-------- */
+#navbar{
+  background-color: black;
 }
 .navbar-container{
   display: flex;
   gap: 40px;
+  margin-left: 10%;
   padding: 20px 30px;
-  background-color: black;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 a{
-  color: aliceblue;
+  color: rgb(202, 202, 202);
   font-size: 15px;
   text-decoration: none;
 }
@@ -104,30 +130,34 @@ hr{
   background-color: aqua;
 }
 
+
+/* ------- About Section------- */
+ 
 .about-section{
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.957), rgba(0, 0, 0, 0.835)), url(https://deekshasharma.vercel.app/style/../img/bg2.jpg);
-  min-height: 500px;
+  min-height: 100%;
+  max-width: 100%;
 }
-.mid-container{
+.about-container{
   display: flex;
   flex-direction: column;
   padding: 120px 50px;
   gap: 100px;
+  /* margin: auto; */
+  max-width: 1200px;
 }
-.website-text{
-  font-size: 40px;
-  text-align: center;
-  color: #CCCCCC;
-}
-.underline{
-  border: #CCCCCC 2px solid;
-  max-width: 190px;
-  margin: 12px auto 0px auto;
-}
+
+
+
+/* ----About .website-functionalities----- */
 .website-functionalities{
   display: flex;
   max-width: 100%;
-  gap: 25px;
+  gap: 15px;
+}
+.two-functionality{
+  display: flex;
+  gap: 15px;
 }
 .functionality{
   display: flex;
@@ -156,22 +186,23 @@ hr{
   gap: 8px;
 }
 .functionalities-text h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #BBBBBB;
 }
 .functionalities-text p{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #bbbbbbd0;
 }
 
+
+/* ------About my skills-------- */
 .about-my-skills{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  /* gap: 30px; */
+  gap: 30px;
   min-width:100%;
 }
-
 .about-myself{
   display: flex;
   flex-direction: column;
@@ -180,15 +211,18 @@ hr{
   max-width: 50%;
 }
 .about-myself p{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
   justify-content: center;
   color: #BBBBBB;
+  line-height: 1.3;
 }
 .about-myself h1{
   font-size: 2.5rem;
   color: #BBBBBB;
 }
+
+/* ---ABOUT skill sets--- */
 .skill-sets{
   display: flex;
   flex-direction: column;
@@ -207,8 +241,9 @@ hr{
   text-align: center;  
   background-color: #101214;
   min-width: 110px;
-  font-size: 13px;
+  font-size: 14px;
 }
+
 .language{
   display: flex;
   justify-content: space-between;
@@ -221,16 +256,16 @@ hr{
 }
 
 .ninty-percent{
-  width: 90%;
+  width: 85%;
 }
 .eighty-percent{
-  width: 80%;
+  width: 75%;
 }
 .seventy-percent{
-  width: 70%;
+  width: 65%;
 }
 .seventy-five-percent{
-  width: 75%;
+  width: 70%;
 }
 .how-much-percent{
   min-height: 100%;
@@ -240,6 +275,10 @@ hr{
   min-width: 5%;
   color: #858585;
 }
+
+
+
+/* ---------Project section-------- */
 
 ul{
   list-style: none;
@@ -252,24 +291,24 @@ img{
 .project-section{
   background-image: linear-gradient(rgba(0, 0, 0, 0.933), rgba(0, 0, 0, 0.91)), url(images/project-bg.jpg);
   min-height: 100%;
-  padding: 120px 0px;
+  padding: 50px 0px;
 }
 
 .project-container{
-  max-width: 1300px;
+  max-width: 85%;
   margin: auto;
   padding: 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 h2{
   text-transform: uppercase;
   font-weight: normal;
   font-size: 120%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #fff;
 }
 
@@ -278,7 +317,7 @@ h2{
   display: flex;
   justify-content: space-between;
   margin: auto;
-  font-size: large;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .filter-menu li{
@@ -291,20 +330,17 @@ h2{
 .filter-menu li.current{
   background: #f33482;
 }
-.filter-item{
-  /* margin: auto; */
-}
 
 .filter-item li{
   height: 200px;
   width: 24.5%;
-  padding: 3px;
+  padding: 2px;
   float: left;
 }
 
 .filter-item li.active{
   width: 24.5%;
-  padding: 3px;
+  padding: 2px;
   transition: all 0.9s ease;
 }
 
@@ -320,7 +356,7 @@ h2{
   height: 100%;
 }
 .filter-item li :hover{
-  opacity: 0.5;
+  opacity: 0.7;
   transition-duration: 0.5s;
   transition-timing-function: ease;   
   border-radius: 2px;
@@ -331,44 +367,69 @@ h2{
 }
 
 
-
+/* ---------Contact Section-------- */
 .contact-section{
   background-image: url("images/star-falling.jpg");
   min-height: 500px;
 }
 
 .contact-container{
-  padding: 100px 20px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: auto;
   text-align: center;
-  gap: 80px;
+  gap: 50px;
 }
 
 .p-tags{
   font-size: 15px;
   letter-spacing: -1px;
+  
 }
+
 .input-form{
   display: flex;
   flex-direction: column;
   gap: 5px;
-  max-width: fit-content;
+  max-width: 90%;
   margin: auto;
 }
 input,textarea,button{
   max-width: 500px;
   min-height: 30px;
   background: #1e242c00;
-  border: 1.5px solid #ffffffa3;
+  border: 0.5px solid #fff;
 }
 
 .form-element{
   resize: none;
-  padding: 3px 10px;
+  padding: 3px 12px;
+  font-size: 1.5rem;
 }
+
+.success-message{
+  display: flex;
+  background-color: #00c381a8;
+}
+#success{
+  color: #000000;
+  min-width: 95%;
+  font-size: 10pt;
+  font-weight: 600;
+  padding: 5px 0;
+}
+.fa-xmark{
+  font-size: 1.5rem;
+  margin-top: 6px;
+  margin-right: 12px;
+  color: black;
+}
+.fa-xmark:hover{
+  cursor: pointer;
+}
+
 .button {
   background: transparent;
   color: #fff;
@@ -384,6 +445,8 @@ input,textarea,button{
   background-color: #04c2c9;
 }
 
+
+/* ------Footer Section-------- */
 .upward-arrow{
   margin-top: -15px;
   position: relative;
@@ -422,46 +485,306 @@ footer{
 
 
 /* Media Query.. */
-@media (min-width:800px) and (max-width:1500px){
-  .about-my-skills p{
-    font-size: 0.8em;
+@media (min-width:900px) and (max-width:1300px){
+
+  /* ----Home Section---- */
+  .my-name{
+    font-size: 4.8rem;
   }
+  .container .details{
+    font-size: 1.8rem;
+  }
+
+
+  .about-container{
+    padding: 120px 50px;
+  }
+  .about-myself h1{
+    word-spacing: 5px;    
+    }
+
+    .project-container{
+      max-width: 95%;
+    }
   .filter-item li.active,
-        .filter-item li{
-            width: 24.5%;
-            padding: 2px;
-            /* margin: auto; */
-        }
-      
-        h2{
-            font-size: 270%;
-        }
+  .filter-item li{
+    width: 24.5%;
+    padding: 2px;
+  }
+  h2{
+    font-size: 270%;
 }
-@media (min-width:500px) and (max-width:800px){
-  .home-section{
-    min-width:max-content;
+}
+@media (min-width:500px) and (max-width:900px){
+  .website-text{
+    font-size: 3.5rem;
   }
-  .navbar{
-    min-width:max-content;
+  .underline{
+    border: #CCCCCC 1.2px solid;
+    max-width: 130px;
+    margin: 5px auto 0px auto;
   }
-  .about-section{
-    min-width:max-content;
+
+/* ---Home Section--- */
+.my-name{
+  font-size: 4rem;
+}
+.container .details{
+  font-size: 1.5rem;
+}
+/* ------About my skills-------- */
+.about-my-skills{
+  flex-direction: column;
+  gap: 80px;
+}
+.about-myself{
+  gap: 20px;
+  min-width: 100%;
+}
+.about-myself p{
+  font-size: 1.5rem;
+}
+.about-myself a p{
+  font-size: 1.6rem;
+}
+.about-myself h1{
+  font-size: 2.7rem;
+  color: #BBBBBB;
+}
+ 
+  /* ---Project Section-- */
+  .project-container{
+    max-width: 95%;
   }
-  .about-my-skills p{
-    font-size: 0.6em;
+  .filter-menu{
+    min-width: 60%;
+    font-size: large;
+  }
+  .filter-menu li{
+    padding: 3px 25px;
+  }
+  .filter-item{
+    margin: auto;
   }
   .filter-item li.active,
   .filter-item li{
-      width: 33.33%;
+      height: 170px;
+      width: 32.63%;
+      padding: 1.5px;
   }
-
   h2{
       font-size: 190%;
   }
+
+  
+/* ----website .functionality---- */
+
+.website-functionalities{
+  display: flex;
+}
+.two-functionality{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.functionalities-text{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.functionalities-text h1{
+  font-size: 2.2rem;
+}
+.functionalities-text p{
+  font-size: 1.6rem;
 }
 
-@media (min-width:300px) and (max-width:500px){
-  .about-my-skills p{
-    font-size: 0.4em;
+  
+}
+
+@media(max-width:750px){
+  .website-text{
+    font-size: 3rem;
+  }  
+  .about-myself a span{
+    font-size: 1.5rem;
+  }
+  .about-container{
+    padding: 80px 40px;
+    gap: 80px;
+  }
+
+/* ------About my skills-------- */
+.about-my-skills{
+  flex-direction: column;
+  gap: 80px;
+}
+.about-myself{
+  gap: 18px;
+  min-width: 100%;
+}
+
+  /* ---Project Section-- */
+  .project-container{
+    max-width: 95%;
+  }
+  
+  .filter-menu{
+    font-size: 1.5rem;
+  }
+  .filter-menu li{
+    padding: 3px 20px;
+  }
+  .filter-item li.active,
+  .filter-item li{
+      width: 48.2%;
+      height: 170px;
+      padding: 3px;
+    }
+  .big-icon{
+    font-size: 1.43em;
+  } 
+/* ----website .functionality---- */
+
+  .functionalities-text h1{
+    font-size: 2rem;
+  }
+  .functionalities-text p{
+    font-size: 1.2rem;
+  }
+
+
+}
+
+@media (min-width:200px) and (max-width:500px){
+  .website-text{
+    /* font-size: 1.2rem; */
+  }
+  .underline{
+    border: #CCCCCC 0.9px solid;
+    max-width: 80px;
+    margin: 4px auto 0px auto;
+  }
+
+  /* ---Home section---- */
+  .my-name{
+    font-size: 3rem;
+  }
+  .container .details{
+    font-size: 1.3rem;
+  }
+  .work span{
+    font-size: 1.5rem;
+    border: #fff 1pt solid;
+    padding: 8px;
+  }
+/* ----Navbar--- */
+.navbar-container{
+  margin: auto;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+a{
+  font-size: 1.2rem;
+}
+  .about-myself p{
+    font-size: 1.3rem;
+  }
+  .about-myself a span{
+    font-size: 1.3rem;
+  }
+  .about-container{
+    padding: 80px 40px;
+    gap: 50px;
+  }
+
+/* ------About my skills-------- */
+
+
+.about-my-skills{
+  flex-direction: column;
+  gap: 80px;
+}
+.about-myself{
+  gap: 18px;
+  min-width: 100%;
+}
+.which-language{
+  min-width: 90px;
+}
+/* ---Website Functionalities--- */
+
+.website-functionalities{
+  display: flex;
+}
+.two-functionality{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.functionalities-text{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.two-functionality{
+  gap: 15px;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.functionality{
+  gap: 10px;
+}
+.functionalities-text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 85px;
+}
+.functionalities-text h1{
+  font-size: 1.8rem;
+}
+.functionalities-text p{
+  font-size: 1.2rem;
+}
+/* ---Project section--- */
+.filter-menu{
+  min-width: 60%;
+  font-size: 1.3rem;
+}
+.filter-menu li{
+  max-width: 20%;
+  padding: 2px 15px;
+}
+  .filter-item li.active,
+  .filter-item li{
+      width: 100%;
+      height: 200px;
+  }
+  .footer{
+    padding:  60px 0px 0px 0px;
+    /* gap: 8rem; */
+    max-width: 30rem;
+  }
+  .big-icon{
+    font-size: 1.43em;
+  }
+
+  /* ----contact section--- */
+  .p-tags{
+    font-size: 15px;
+    word-spacing: 3px;
   }
 }
+
+
